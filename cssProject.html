@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #ffd1ba;
+        font-family: "Dosis", serif;
+      }
+      .weather {
+        display: block;
+        max-width: 40%;
+        padding: 40px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 10px;
+      }
+      .form {
+        display: block;
+      }
+
+      .form_input {
+        border: none;
+        background: #f7f9f9;
+        border-radius: 5px;
+        padding: 20px;
+        width: 75%;
+        border-radius: 6px;
+        font-size: 16px;
+      }
+      .form_button {
+        border: none;
+        background: #f7f9f9;
+        color: #000000;
+        border-radius: 5px;
+        padding: 20px;
+        margin-left: 5px;
+        font-size: 16px;
+        line-height: 1;
+      }
+      .weatherInfo {
+        padding: 30px O;
+        display: flex;
+        justify-content: space-between;
+      }
+      .temperature {
+        font-size: 48px;
+        margin-top: 30px;
+      }
+      .city {
+        font-size: 36px;
+      }
+      .details strong {
+        color: #f65282;
+      }
+      .temp-icon {
+        position: relative;
+        font-size: 40px;
+        margin-right: 10px;
+        top: -10px;
+      }
+      .temp-value {
+        font-size: 60px;
+        font-weight: bold;
+      }
+      .temp-unit {
+        font-size: 28px;
+        position: relative;
+        top: -25px;
+      }
+      footer {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="weather">
+      <div class="form">
+        <input
+          class="form_input"
+          type="search"
+          name="city"
+          id="city"
+          placeholder="Enter a city..."
+        />
+        <input class="form_button" type="button" value="Search" />
+      </div>
+      <div class="weatherInfo">
+        <div class="currentWeather">
+          <div>
+            <h1 class="city">Antwerp</h1>
+            <p class="details">
+              Sunday 15:02, rain <br />
+              Humidity: <strong>92%</strong>, Wind:
+              <strong>2.3km/h</strong>
+            </p>
+          </div>
+        </div>
+        <div class="temperature">
+          <span class="temp-icon">❄️ </span>
+          <span class="temp-value">4</span>
+          <span class="temp-unit">°C</span>
+        </div>
+      </div>
+      <footer>
+        This project was coded by Dora. You can find me on
+        <a href="https://www.linkedin.com/in/dorien-coveliers/">LinkedIn</a>.
+      </footer>
+    </div>
+  </body>
+</html>
